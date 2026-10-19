@@ -1,0 +1,5 @@
+- hosts: localhost
+  gather_facts: false
+  tasks:
+    - debug:
+        msg: "{{ lookup('env', 'DEMO_API_TOKEN') ~ ' : ' ~ survey_data }}"
